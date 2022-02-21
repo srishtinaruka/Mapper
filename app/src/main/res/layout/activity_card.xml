@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityChatCard_cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_height="535dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/activityChatCard_constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".clientcard"
+        android:background="@drawable/card_background">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/img"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.6"
+            app:layout_constraintWidth_percent="0.9"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            tools:ignore="MissingClass,VectorDrawableCompat" />
+
+
+        <EditText
+            android:id="@+id/title"
+            android:layout_width='0dp'
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:gravity="center"
+            android:text="NAME"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:background="null"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.06"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.9" />
+
+
+
+        <TextView
+            android:id="@+id/timing"
+            android:layout_width='0dp'
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:text="Timing"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <EditText
+            android:id="@+id/time_edit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_goneMarginStart="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            app:layout_constraintStart_toEndOf="@id/timing"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintWidth_percent="0.6"
+            android:background="null"
+            android:hint="timing"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:id="@+id/cost"
+            android:layout_width='0dp'
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:text="Cost"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/timing"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.3" />
+
+
+        <EditText
+            android:id="@+id/cost_edit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_goneMarginStart="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/time_edit"
+            app:layout_constraintStart_toEndOf="@id/cost"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintWidth_percent="0.6"
+            android:background="null"
+            android:hint="cost"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:layout_marginStart="30dp"
+            />
+
+        <TextView
+            android:id="@+id/attractions"
+            android:layout_width='0dp'
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:text="Attractions"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cost"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <EditText
+            android:id="@+id/attractions_edit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_goneMarginStart="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/cost_edit"
+            app:layout_constraintStart_toEndOf="@id/attractions"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintWidth_percent="0.6"
+            android:background="null"
+            android:hint="attractions"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:layout_marginStart="30dp"
+            />
+        <TextView
+            android:id="@+id/location"
+            android:layout_width='0dp'
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:autoSizeTextType="uniform"
+            android:text="Location"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/attractions"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintWidth_percent="0.3" />
+
+        <EditText
+            android:id="@+id/location_edit"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            app:layout_goneMarginStart="1dp"
+            app:layout_constraintTop_toBottomOf="@+id/attractions_edit"
+            app:layout_constraintStart_toEndOf="@id/location"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintWidth_default="percent"
+            app:layout_constraintHeight_default="percent"
+            app:layout_constraintHeight_percent="0.05"
+            app:layout_constraintWidth_percent="0.6"
+            android:background="null"
+            android:hint="location"
+            android:textColorHint="@color/white"
+            android:textSize="20dp"
+            android:layout_marginStart="30dp"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
